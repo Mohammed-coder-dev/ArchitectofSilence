@@ -6,6 +6,10 @@
   <meta name="theme-color" content="#070a13" />
   <title>Architect of Silence — Memoir by Alkindi</title>
   <meta name="description" content="Architect of Silence — a memoir rendered as a living interface. Silence as system. Structure as survival." />
+  <meta property="og:title" content="Architect of Silence — Memoir by Alkindi" />
+  <meta property="og:description" content="A 2100-grade interface to a 21st‑century becoming. Silence engineered. Self compiled." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -13,8 +17,8 @@
   <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="g" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="%2300F0FF"/><stop offset="50%" stop-color="%237B6CFF"/><stop offset="100%" stop-color="%23070a13"/></radialGradient></defs><circle cx="50" cy="50" r="46" fill="url(%23g)"/><path d="M50 18 L76 50 L50 82 L24 50 Z" fill="none" stroke="white" stroke-width="3" opacity=".7"/></svg>' />
 </head>
 <body>
-  <div class="noise"></div>
-  <nav class="nav">
+  <div class="noise" aria-hidden="true"></div>
+  <nav class="nav" aria-label="Primary">
     <div class="nav__brand">
       <span class="glyph" aria-hidden="true"></span>
       <span class="brand">Architect of Silence</span>
@@ -23,16 +27,16 @@
       <a href="#about">About</a>
       <a href="#works">Works</a>
       <a href="#memoir">Memoir</a>
-      <a class="chip" href="/memoir.pdf">Download PDF</a>
+      <a class="chip" href="/memoir.pdf" aria-label="Download the memoir as PDF">Download PDF</a>
     </div>
   </nav>
 
   <header class="hero" id="top" aria-label="Futuristic hero">
     <div class="hero__grid" aria-hidden="true"></div>
     <div class="hero__inner">
-      <p class="hero__tag"><span class="dot"></span>Memoir · System-Built Self</p>
+      <p class="hero__tag"><span class="dot" aria-hidden="true"></span>Memoir · System-Built Self</p>
       <h1 class="hero__title">Silence engineered.<br/><span class="glow">Self compiled.</span></h1>
-      <p class="hero__lede">A 2100-grade interface to a 21st‑century becoming. This is not a brand page; it’s a trace—logs written in human time, rendered in luminous geometry.</p>
+      <p class="hero__lede">A website from 2100, living in 2025. Less homepage, more hymn. A quiet engine where memory mineralizes into geometry and motion. What follows is an interface for becoming—patched over years, rendered now in lucid neon.</p>
       <div class="cta">
         <a class="btn btn--primary" href="#memoir">Read Highlights</a>
         <a class="btn btn--ghost" href="/memoir.pdf">Full PDF</a>
@@ -44,27 +48,27 @@
     <section class="about" id="about" aria-label="About the author">
       <div class="section__hd">
         <h2>Author</h2>
-        <p class="kicker">A brief intro—memoir context only.</p>
+        <p class="kicker">Memoir context. Nothing branded. Only signal.</p>
       </div>
       <div class="about__grid">
         <article class="about__card">
           <h3>Alkindi</h3>
-          <p>Engineer of systems and meaning. Built from constraint, trained on silence, optimized for integrity. Writes in structures first, sentences second. This memoir archives the operating principles of a life compiled under pressure—then refactored for coherence.</p>
+          <p>I was hewn from constraint and tuned by quiet. I treat language like scaffolding and build meaning that refuses collapse. My tools are structure, rhythm, and refusal. This memoir is an operating manual for a life compiled under pressure and refactored for coherence.</p>
         </article>
         <article class="about__card">
-          <h3>Core Contributions</h3>
+          <h3>Operating Principles</h3>
           <ul class="bullets">
-            <li>Articulated <em>silence-as-architecture</em>—a rigorous model for how constraint shapes identity and cognition.</li>
-            <li>Translated trauma into <em>systems primitives</em>: logging, sandboxing, traversal, graceful degradation.</li>
-            <li>Authored <em>Architect of Silence</em> as an executable design document for self: part memoir, part audit trail, part blueprint.</li>
+            <li><em>Silence-as-architecture</em> — absence is load‑bearing; stillness carries weight.</li>
+            <li><em>Emotion as protocol</em> — regulate, serialize, checksum, transmit intact.</li>
+            <li><em>Graceful degradation</em> — when the storm arrives, fall back without failing.</li>
           </ul>
         </article>
         <article class="about__card">
-          <h3>Selected Works</h3>
+          <h3>Shelves & Shards</h3>
           <ul class="bullets">
-            <li><strong>Architect of Silence</strong> — this memoir, presented as living interface.</li>
-            <li><strong>Schema Over Scream</strong> — essays on emotional protocols and interface design for truth.</li>
-            <li><strong>Graph Theory as God</strong> — traversal as testimony; structure as salvation.</li>
+            <li><strong>Architect of Silence</strong> — a memoir rendered as a living interface.</li>
+            <li><strong>Schema Over Scream</strong> — emotional protocols for truth‑aligned speech.</li>
+            <li><strong>Graph Theory as God</strong> — traversal as testimony; the path as prayer.</li>
           </ul>
         </article>
       </div>
@@ -73,24 +77,24 @@
     <section class="works" id="works" aria-label="Highlights">
       <div class="section__hd">
         <h2>Highlights</h2>
-        <p class="kicker">Distillations from the memoir—rendered as cards.</p>
+        <p class="kicker">Distillations from the memoir—cut to the crystalline.</p>
       </div>
       <div class="cards">
         <article class="card">
           <h3>Pressure Chamber</h3>
-          <p>Where genius first became a survival tactic. Not performance—uptime. Not story—system. </p>
+          <p>Where brilliance was not a performance but uptime. Where survival compiled into method, method into music.</p>
         </article>
         <article class="card">
           <h3>Lossless Compression</h3>
-          <p>Feelings serialized, buffered, and finally decompressed into language with audit-grade clarity.</p>
+          <p>Feelings buffered, serialized, and decompressed into language with audit‑grade checksum. Nothing missing. Nothing extra.</p>
         </article>
         <article class="card">
           <h3>Schema Over Scream</h3>
-          <p>When shouting fails as protocol, design a schema that never lies. Replace reaction with architecture.</p>
+          <p>When shouting fails as protocol, design a schema that never lies. Replace reaction with architecture; trade noise for nomenclature.</p>
         </article>
         <article class="card">
           <h3>Graph Theory as God</h3>
-          <p>Traversal as faith. If a path exists, we can find it. If not, we rewire the graph and try again.</p>
+          <p>If a path exists, we find it. If no path exists, we rewire the graph and try again—with mercy for the cycles.</p>
         </article>
       </div>
     </section>
@@ -102,9 +106,13 @@
       </div>
       <div class="excerpt">
         <blockquote>
-          <p>“This isn’t a story told in chapters. It’s a change log.”</p>
+          <p>“This isn’t a story told in chapters. It’s a change log. Every release notes an exit from a former self.”</p>
           <cite>— Architect of Silence</cite>
         </blockquote>
+        <div class="grid grid--two">
+          <p>I learned to version my breath. To checkpoint mornings. To name the breaking so it would stop breaking me. Silence was not absence; it was <em>protocol</em>. It turned feeling into format and kept the meaning lossless across storms.</p>
+          <p>What I want is a cathedral that fits in a browser. Stone made of syntax. Stained glass compiled from memory fragments. A place where you can hear the floor hum because the future is already running underneath.</p>
+        </div>
         <a class="btn btn--primary" href="/memoir.pdf">Download the PDF</a>
       </div>
     </section>
