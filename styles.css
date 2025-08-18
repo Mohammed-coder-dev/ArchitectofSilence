@@ -9,7 +9,7 @@
 :root{
   --bg:#070a13;
   --fg:#e9f2ff;
-  --muted:#a6b3c9;
+  --muted:#b8c4da; /* ↑ slightly brighter for contrast */
   --a:#00f0ff;    /* cyan */
   --b:#7b6cff;    /* violet */
   --c:#ff5df3;    /* magenta */
@@ -24,7 +24,7 @@
 html,body{height:100%}
 body{
   margin:0; color:var(--fg);
-  font:16px/1.6 Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  font:16px/1.6 Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
   background:
     radial-gradient(1200px 800px at 10% -10%, rgba(255,93,243,.15), transparent 60%),
     radial-gradient(1000px 700px at 110% 0%, rgba(0,240,255,.16), transparent 60%),
@@ -75,7 +75,14 @@ body{
 .hero__tag{display:inline-flex;align-items:center;gap:10px;color:var(--muted);border:1px solid var(--stroke);padding:8px 12px;border-radius:999px;background:var(--glass)}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--d);box-shadow:0 0 14px var(--d)}
 .hero__title{font-size:clamp(2.4rem, 7vw, 5rem);line-height:1.04;margin:14px 0;font-weight:900;letter-spacing:.4px}
-.glow{background:linear-gradient(90deg, var(--a), var(--b), var(--c), var(--d));-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 32px rgba(0,240,255,.35);position:relative}
+h1,h2,h3{font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;}
+.glow{
+  background:linear-gradient(90deg, var(--a), var(--b), var(--c), var(--d));
+  -webkit-background-clip:text;background-clip:text;
+  color:transparent; -webkit-text-fill-color:transparent; /* Safari fidelity */
+  text-shadow:0 0 32px rgba(0,240,255,.35);
+  position:relative
+}
 .glow::after{content:attr(data-text);position:absolute;top:2px;left:2px;z-index:-1;color:rgba(0,240,255,.2);filter:blur(8px)}
 .hero__lede{color:var(--muted);max-width:72ch;margin:0 auto}
 .cta{display:flex;gap:12px;justify-content:center;margin-top:18px;flex-wrap:wrap}
@@ -125,5 +132,5 @@ body{
 @media (prefers-reduced-motion: reduce){
   .hero__grid{animation:none;transform:none}
   .card:hover,.about__card:hover{transform:none}
-  .noise{animation:none}
+  .noise{animation:none;opacity:.05}
 }
