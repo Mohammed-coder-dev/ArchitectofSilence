@@ -1,9 +1,14 @@
 {
   "redirects": [
+    { "source": "/read", "destination": "https://architectofsilence.online", "permanent": true }
+  ],
+  "headers": [
     {
-      "source": "/read",
-      "destination": "https://architectofsilence.online",
-      "permanent": true
+      "source": "/memoir.pdf",
+      "headers": [
+        { "key": "Content-Type", "value": "application/pdf" },
+        { "key": "Content-Disposition", "value": "inline; filename=\"Architect_of_Silence_Memoir.pdf\"" }
+      ]
     }
   ]
 }
